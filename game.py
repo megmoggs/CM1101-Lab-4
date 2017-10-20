@@ -68,6 +68,7 @@ def normalise_input(user_input):
     >>> normalise_input("HELP!!!!!!!")
     'help'
     """
+    
     user_input = remove_punct(user_input)
     user_input = remove_spaces(user_input)
     user_input = user_input.lower()
@@ -200,7 +201,7 @@ def menu(exits):
 
         # Read player's input
    
-    user_direction = user_input()
+    user_input = input(">")
 
         # Normalise the input
   
